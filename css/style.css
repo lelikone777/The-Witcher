@@ -132,10 +132,17 @@ body {
 
 /* Слайдер */
 
+.swiper-container {
+    max-width: 420px;
+    margin-left: 0;
+}
+
 .series {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+    position: relative;
+    max-width: 420px;
 }
 
 .card {
@@ -183,6 +190,9 @@ body {
     background-repeat: no-repeat;
     background-position:  center;
     background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: -35px;
 }
 
 /* footer */

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -64,21 +65,35 @@
             <!-- /.play -->
         </div>
         <!-- /.main-content -->
+
+
         <div class="series">
-            <div class="card series-1">
-                <span class="card-subtitle">Серия #1</span>
-                <h2 class="card-title">Начало конца</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card series-1">
+                            <span class="card-subtitle">Серия #1</span>
+                            <h2 class="card-title">Начало конца</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card series-2">
+                            <span class="card-subtitle">Серия #2</span>
+                            <h2 class="card-title">Четыре знака</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card series-2">
+                            <span class="card-subtitle">Серия #3</span>
+                            <h2 class="card-title">Четыре знака</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card series-2">
-                <span class="card-subtitle">Серия #2</span>
-                <h2 class="card-title">Четыре знака</h2>
-            </div>
-            <div class="navigation">
-                <button class="arrow"></button>
-            </div>
-        </div>
-   
-        <!-- /.series -->
+            <button class="arrow"></button>
+        </div> 
+
+
     </div>
     <!-- /.container -->
    </main>
@@ -104,5 +119,7 @@
             <!-- /.footer-content -->
         </div>
    </footer>
-</body>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body> 
 </html>
