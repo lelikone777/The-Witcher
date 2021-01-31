@@ -249,6 +249,7 @@ body {
 @media (max-width: 540px) {
 
     .menu-button {
+        transition: transform 0.2s;
         display: block;
         position: absolute;
         right: 35px;
@@ -257,9 +258,11 @@ body {
         height: 2px;
         background-color: #fff;
         border: none;
+        cursor: pointer;
     }
 
     .menu-button::before {
+        transition: transform 0.2s;
         content: '';
         display: block;
         width: 30px;
@@ -272,6 +275,7 @@ body {
     }
 
     .menu-button::after {
+        transition: transform 0.2s;
         content: '';
         display: block;
         width: 30px;
@@ -283,7 +287,22 @@ body {
         left: 0;
     }
 
+    .menu-button-active {
+        height: 0;
+    }
+
+    .menu-button-active::before {
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+
+    .menu-button-active::after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+
     .header {
+        display: none;
         position: absolute;
         right: 0;
         top: 0;
@@ -291,6 +310,10 @@ body {
         flex-direction: column;
         width: 250px;
         padding-bottom: 40px;
+    }
+
+    .header-active {
+        display: flex;
     }
 
     .menu-list {
@@ -320,7 +343,20 @@ body {
         margin-left: 0;
     }
 
+    .swiper-container {
+        width: 80%;
+    }
 
+    .main-content {
+        margin-top: 196px;
+    }
 
+    .main-title {
+        font-size: 56px;
+    }
+
+    .series {
+        width: 80%;
+    }
 
 }
