@@ -43,8 +43,7 @@ menuButton.addEventListener('click', event => {
     const target = event.target;
     
    
-      if (!menuButton.classList.contains('menu-button-active')) {
-        console.log(1123);
+      if (!menuButton.classList.contains('menu-button-active')) { 
         header.classList.add('header-active');
         menuButton.classList.add('menu-button-active');
       } else {
