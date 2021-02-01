@@ -301,6 +301,8 @@ body {
         height: 0;
     }
 
+    
+
     .menu-button-active::before {
         transform: rotate(45deg);
         margin-top: 0;
@@ -326,6 +328,11 @@ body {
         display: flex;
         animation: fadeInDownBig;
         animation-duration: 0.8s;
+    }
+
+    .header-hiding {
+        animation: fadeOutUpBig;
+        animation-duration: 1.2s; 
     }
 
     .menu-list {

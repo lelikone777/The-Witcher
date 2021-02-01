@@ -36,11 +36,37 @@ const swiper = new Swiper('.swiper-container', {
   });
 
   
+const menuButton = document.querySelector('.menu-button');
+const header = document.querySelector('.header');
+
+menuButton.addEventListener('click', event => {
+    const target = event.target;
+    
+   
+      if (!menuButton.classList.contains('menu-button-active')) {
+        console.log(1123);
+        header.classList.add('header-active');
+        menuButton.classList.add('menu-button-active');
+      } else {
+        menuButton.classList.remove('menu-button-active');
+        header.classList.add('header-hiding');
+        setTimeout(() => {
+          header.classList.remove('header-active');
+          header.classList.remove('header-hiding');
+        }, 400)
+      }
+    
+  });
 
 
-var menuButton = document.querySelector('.menu-button');
-var menu = document.querySelector('.header');
-menuButton.addEventListener('click', function () {
-    menuButton.classList.toggle('menu-button-active');
-    menu.classList.toggle('header-active');
-})
+
+
+
+// var menuButton = document.querySelector('.menu-button');
+// var header = document.querySelector('.header');
+// menuButton.addEventListener('click', function () {
+//   menuButton.classList.toggle('menu-button-active');
+//   header.classList.toggle('header-active');
+// })
+
+
